@@ -152,6 +152,7 @@ public class Animation extends MyFrame{
 			}
 		}*/
 		
+		
 		int y=50;
 		int x=30;
 		int i=0;
