@@ -1,7 +1,7 @@
 
 public class Car {
-	int x,y,vx,vy;
-	public Car(int x,int y,int vx) {
+	double x,y,vx,vy;
+	public Car(double x,double y,double vx) {
 		this.x=x;
 		this.y=y;
 		this.vx=vx;
@@ -15,6 +15,12 @@ public class Car {
 	
 	public void move() {
 		x+=vx;
+		//7-EX2
+		vx*=1.05;
+		//7-Ex
+		if(x>=400) {
+			x=0;
+		}
 	}
 
 }
