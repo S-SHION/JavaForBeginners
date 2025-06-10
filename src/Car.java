@@ -1,10 +1,7 @@
 
-public class Car {
-	double x,y,vx,vy;
-	public Car(double x,double y,double vx) {
-		this.x=x;
-		this.y=y;
-		this.vx=vx;
+public class Car extends Vehicle{
+	public Car (int x,int y,int vx,int vy) {
+		super(x, y, vx, vy);
 	}
 	public void draw(MyFrame frame) {
 		frame.fillRect(x, y, 20, 20);
@@ -13,14 +10,15 @@ public class Car {
 		frame.fillOval(x+15, y+20, 10, 10);
 	}
 	
-	public void move() {
+	/*public void move() {
 		x+=vx;
-		//7-EX2
+		y+=vy;
+		7-EX2
 		vx*=1.05;
-		//7-Ex
+		7-Ex
 		if(x>=400) {
 			x=0;
 		}
-	}
+	}*/
 
 }
